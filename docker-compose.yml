@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+
+  nginx-server:
+    image: nginx:1.21.6-alpine
+    container_name: NLB_Server
+    ports:
+      - "8081:80"
+
+  nginx-node1:
+    image: nginx:1.21.6-alpine
+    container_name: NLB_Node1
+    ports:
+      - "80"
+      
+  nginx-node2:
+    image: nginx:1.21.6-alpine
+    container_name: NLB_Node2
+    ports:
+      - "80"
