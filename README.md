@@ -7,9 +7,9 @@
 
 ### Scenario
 We'll create three Nginx machine containers:
-1. The main server - NLB_Server
-2. Sever One - NLB_Node1
-3. Server Two - NLB_Node2
+1. NLB_Server : nginx-server
+2. NLB_Node1  : nginx-node1 
+3. NLB_Node2  : nginx-node2
 
 We'll have the NLB_Server set up as an HTTPS reverse proxy to intermediate a proxy service for the client requests that redirects to their balance servers NLB_Node1 and NLB_Node2 that in turn deliver the server's response back to the client.
 
